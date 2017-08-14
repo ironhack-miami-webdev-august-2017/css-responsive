@@ -1,0 +1,80 @@
+/* This stuff is for all sizes */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  background-color: navy;
+  color: white;
+}
+
+a {
+  color: deeppink;
+}
+
+.ads {
+  border: 3px solid orange;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+
+/* Small size styles */
+nav {
+  display: none;
+}
+
+
+/* Medium size styles */
+@media (min-width: 768px) {
+  nav {
+    display: block;
+  }
+
+  section {
+    overflow: auto;
+  }
+
+  .main-content,
+  .ads {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .main-content {
+    width: 75%;
+  }
+
+  .ads {
+    width: 25%;
+  }
+}
+
+
+/* Large size styles */
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 75px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  p,
+  a,
+  .ads {
+    font-size: 30px;
+  }
+
+  .main-content {
+    width: 50%;
+  }
+
+  .ads {
+    width: 50%;
+  }
+}
